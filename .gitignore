@@ -1,0 +1,31 @@
+# Compiled files
+*.o
+*.out
+*.exe
+
+# Object files
+*.obj
+
+# Generated files
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+CMakeCache.txt
+compile_commands.json
+.cmake/
+.cache/
+_deps/
+
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+
+Evosim
+
+# Visual Studio Code
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Build output
+build/
