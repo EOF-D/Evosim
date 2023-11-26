@@ -5,10 +5,7 @@ namespace evosim {
 
   // Constructor & Destructor
   World::World(int width, int height, const char* title)
-      : window(nullptr), width(width), height(height) {
-    this->title = title;
-    logger::info("World created.");
-  }
+      : window(nullptr), width(width), height(height), title(title) {}
 
   World::~World() {
     // Cleanup Imgui resources
