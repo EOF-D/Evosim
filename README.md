@@ -10,6 +10,7 @@ Dependencies
 1. Imgui
 2. GLFW
 3. GLAD
+4. GLM
 
 
 Building the Project
