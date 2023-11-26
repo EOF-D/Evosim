@@ -21,6 +21,7 @@ CMakeDoxyfile.in
 CMakeDoxygenDefaults.cmake
 
 Evosim
+imgui.ini
 
 # Visual Studio Code
 .vscode/

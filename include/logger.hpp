@@ -20,29 +20,36 @@ namespace logger {
     char timestamp[20];
     std::strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", localTime);
 
-    // Define log level string
+    // Define log level string and color
     const char* levelStr;
+    const char* color;
+
     switch (level) {
       case DEBUG:
         levelStr = "DEBUG";
+        color = "\033[0;37m";  // White
         break;
       case INFO:
         levelStr = "INFO";
+        color = "\033[0;32m";  // Green
         break;
       case WARNING:
         levelStr = "WARNING";
+        color = "\033[0;33m";  // Yellow
         break;
       case ERROR:
         levelStr = "ERROR";
+        color = "\033[0;31m";  // Red
         break;
       default:
         levelStr = "UNKNOWN";
+        color = "\033[0m";  // Reset color
         break;
     }
 
     // Print the log message with timestamp and log level to the console
-    std::cerr << "[" << timestamp << "] " << levelStr << ": " << message
-              << std::endl;
+    std::cerr << "[" << timestamp << "] " << color << levelStr
+              << "\033[0m: " << message << std::endl;
   }
 
   // Convenience functions for specific log levels
