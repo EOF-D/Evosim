@@ -26,5 +26,5 @@ file(GLOB_RECURSE HEADER_FILES "include/*.hpp")
 file(GLOB_RECURSE IMGUI_FILES "lib/imgui/*.cpp")
 file(GLOB_RECURSE IMGUI_HEADERS "lib/imgui/*.h")
 
-add_executable(Evosim src/main.cpp ${SOURCE_FILES} ${HEADER_FILES} ${IMGUI_FILES} ${IMGUI_HEADERS})
+add_executable(Evosim main.cpp ${SOURCE_FILES} ${HEADER_FILES} ${IMGUI_FILES} ${IMGUI_HEADERS})
 target_link_libraries(Evosim PUBLIC glad glfw)
