@@ -1,6 +1,5 @@
 #include "../include/world.hpp"
 #include "../include/logger.hpp"
-#include "imgui_impl_glfw.h"
 
 namespace evosim {
 

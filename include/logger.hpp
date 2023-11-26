@@ -1,5 +1,3 @@
-// logger.hpp
-
 #ifndef EVOSIM_LOGGER_HPP
 #define EVOSIM_LOGGER_HPP
 
